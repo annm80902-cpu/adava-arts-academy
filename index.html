@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADAVA ARTS & ACADEMY</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; text-align: center; }
+    header { background: #222; color: white; padding: 20px; font-size: 24px; font-weight: bold; }
+    .logo { margin-top: 15px; height: 120px; }
+    .container { padding: 30px; }
+    button { padding: 15px 25px; margin: 10px; border: none; border-radius: 8px; background: #0055ff; color: white; font-size: 18px; cursor: pointer; transition: 0.3s; }
+    button:hover { background: #003bb3; }
+    .portal { display: none; padding: 20px; background: white; margin: 20px auto; width: 90%; max-width: 600px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; padding: 10px; }
+    .portfolio-item { background: #eaeaea; border-radius: 10px; padding: 10px; }
+    .portfolio-item img { width: 100%; border-radius: 10px; }
+    .portfolio-title { font-weight: bold; margin-top: 8px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <header>ADAVA ARTS & ACADEMY</header>
+
+  <img src="logo.png" alt="Logo" class="logo" />
+
+  <div class="container">
+    <h2>Welcome to ADAVA ARTS & ACADEMY</h2>
+    <p>Choose a portal below:</p>
+
+    <button onclick="openPortal('arts')">Arts Portal</button>
+    <button onclick="openPortal('academy')">Academy Portal</button>
+    <button onclick="openPortal('portfolio')">View Portfolio</button>
+  </div>
+
+  <button onclick="location.href='tel:09025332093'" style="padding:15px 25px;margin:10px;border:none;border-radius:8px;background:#28a745;color:white;font-size:18px;cursor:pointer;">Get in Touch</button>
+
+  <!-- Arts Portal -->
+  <div id="arts" class="portal">
+    <h3>Arts Portal</h3>
+    <p>Explore our creative artwork and design pieces.</p>
+  </div>
+
+  <!-- Academy Portal -->
+  <div id="academy" class="portal">
+    <h3>Academy Portal</h3>
+    <p>Train with ADAVA Academy — skill development, creativity, and mastery.</p>
+  </div>
+
+  <!-- Portfolio with Sample Images -->
+  <div id="portfolio" class="portal">
+    <h3>Portfolio</h3>
+    <p>Here are sample portfolio items (placeholders):</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x300?text=Logo+Design" alt="Sample Logo" />
+        <div class="portfolio-title">Sample Logo Design</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x300?text=Flyer+Design" alt="Sample Flyer" />
+        <div class="portfolio-title">Flyer Design</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x300?text=Poster+Art" alt="Sample Poster" />
+        <div class="portfolio-title">Poster Artwork</div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/300x300?text=Branding" alt="Branding Sample" />
+        <div class="portfolio-title">Branding Concept</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openPortal(id) {
+      document.querySelectorAll('.portal').forEach(p => p.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
