@@ -1,0 +1,61 @@
+
+```css
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #4a00e0;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about, .contact {
+  padding: 30px 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: #ff5e57;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6a00ff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #fcb69f;
+  font-size: 14px;
+}
+```
